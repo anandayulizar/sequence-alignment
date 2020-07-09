@@ -29,6 +29,7 @@ Terdapat dua titik capai dalam tugas ini :
 [1] Pemrograman dinamis pensejajaran global yang naif, sayangnya memiliki kompleksitas ruang eksponensial. Sebagai contoh, bila anda membandingkan dua buah sekuens DNA dengan panjang ~29000, anda akan memerlukan ruang sekitar 29000 x 29000 ~ 784.000.000. Beberapa komputer mungkin tidak memiliki cukup memori. Gunakan *DnC* untuk membantu mengurangi kompleksitas ruang<br>
 [2] Anda bisa saja menggunakan Needleman-Wunsch n-dimensi untuk melakukan MSA, akan tetapi ingat bahwa kompleksitasnya eksponensial terhadap jumlah sekuens. Anda disarankan menggunakan *progressive alignment* dengan menggunakan profiling.<br>
 [3] Anda dapat membuat 2 buah algoritma untuk perbanding antar sekuens dan perbandingan antar profil. Coba anda ubah agar anda melakukan keduanya secara langsung, sehingga mengurangi beban kerja anda.
+[4] Anda bisa saja menggunakan Python untuk mengerjakan tugas, namun ingat bahwa **kinerja C++ dan C jauh lebih cepat**. Sebagai pengalaman, asisten menjalankan skoring pensejajaran global 2 DNA dengan panjang ~29000 nukleotida. Algoritma berjalan 100 menit untuk Python, dan algoritma berjalan hanya 3 menit untuk bahasa C++ dengan flag -O3 (optimization) ketika kompilasi (**33 x speedup !**). Sebagai saran (bila anda keukeuh menggunakan Python) , anda bisa menggunakan Python optimizer (misal Numba ataupun Cython) untuk mempercepat eksekusi algoritma anda.
 
 ## Pengumpulan
 ### Pengerjaan
